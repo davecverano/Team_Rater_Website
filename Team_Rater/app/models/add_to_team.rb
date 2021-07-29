@@ -1,0 +1,2 @@
+class AddToTeam < ApplicationRecord
+end

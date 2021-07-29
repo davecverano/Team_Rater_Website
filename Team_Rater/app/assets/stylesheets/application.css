@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ /* Sets overall styling for things within the body tag */
+body {
+  background-color: #9e0b0b;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Proxima Nova", "Capita";
+  text-align: center;
+}
+
+/* Overall rule for border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that are next ot each other and each take 50% of screen */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Sets styling rules for right 50% of the screen */
+.columnRight {
+  float: right;
+  width: 50%;
+  padding-left: 120px;
+}
+
+/* Clear the floats after the columns 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+

@@ -1,0 +1,2 @@
+class RemoveDotnum < ApplicationRecord
+end

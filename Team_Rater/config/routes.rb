@@ -1,19 +1,14 @@
 Rails.application.routes.draw do
-
-
-
- 
-  get 'home/index', to: "home#index"
- 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root "home#index"
+  get "home", to: "home#index", as: "home"
+  get "home/index", to: "home#index"
 
   resources :students
   resources :admins
   resources :studentsessions, only: [:new, :create, :destroy]
   resources :adminsessions, only: [:new, :create, :destroy]
 
-  get "home", to: "home#index", as: "home"
   get "student_signup", to: "students#new", as: "student_signup"
   get "student_login", to: "studentsessions#new", as: "student_login"
   get "student_logout", to: "studentsessions#destroy", as: "student_logout"
@@ -24,9 +19,5 @@ Rails.application.routes.draw do
 
   get "maketeam", to: "teams#new", as: "maketeam"
   get "addcourse", to: "courses#new", as: "addcourse"
-  get "createproject", to: "project#new", as: "createproject"
-
-  
+  get "createproject", to: "projects#new", as: "createproject"
 end
-
-

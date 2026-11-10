@@ -1,2 +1,0 @@
-class RemoveDotnum < ApplicationRecord
-end

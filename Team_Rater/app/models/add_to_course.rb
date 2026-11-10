@@ -1,2 +1,0 @@
-class AddToCourse < ApplicationRecord
-end
